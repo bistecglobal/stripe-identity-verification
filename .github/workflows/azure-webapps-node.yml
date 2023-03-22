@@ -49,7 +49,7 @@ jobs:
       working-directory: ./src
       
     - name: Zip artifact to upload
-      run: zip -r ${{ env.ZIP_PACKAGE_NAME }} ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/src
+      run: zip -r ${{ env.ZIP_PACKAGE_NAME }} ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/src/
 
     - name: Upload artifact for deployment job
       uses: actions/upload-artifact@v3
